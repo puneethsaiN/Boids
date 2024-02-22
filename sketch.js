@@ -28,7 +28,7 @@ function setup() {
     speedSlider = createSlider(0, 10, 6, 0.5);
     speedSlider.parent(label);
 
-    for(let i=0;i<200;i++){
+    for(let i=0;i<100;i++){
         flock.push(new Boid());
     }
 }
