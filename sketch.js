@@ -1,7 +1,10 @@
 var flock = []
 let alignSlider, cohesionSlider;
+
+
 function setup() {
-    createCanvas(840, 460);
+    let canvas = createCanvas(840, 460);
+    canvas.position(10, 10);
 
     label = createDiv('alignment');
     label.position(10, 500);  
@@ -27,6 +30,7 @@ function setup() {
     label.position(10, 620);  
     speedSlider = createSlider(0, 10, 6, 0.5);
     speedSlider.parent(label);
+
 
     for(let i=0;i<100;i++){
         flock.push(new Boid());
