@@ -45,7 +45,7 @@ class Boid {
             }
         }
         if(len > 0) {
-            sumVelocities.div(len);
+            sumVelocities.div(len * len);
             sumVelocities.setMag(maxSpeed);
             sumVelocities.sub(this.velocity);
             sumVelocities.limit(this.maxForce);
